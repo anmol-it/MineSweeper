@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>MineSweeper::Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="styles2.css" type="text/css"> -->
+
+
+    <style>
+        nav ul li {
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 20px;
+            font-size: 50px;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            margin-top: 3em;
+            margin-left: 10em;
+
+        }
+
+        /*button{
+    width:15em;
+    height: 7em;
+    margin-left:5%;
+    margin-top:10%;
+    font-size: 30px;
+    margin-bottom:5em;
+} */
+
+        BODY {
+            background: url(images/minesweeper.jpg) no-repeat;
+            background-size: 100% 100%;
+            color: #DDDDDD;
+            font-family: courier new;
+            text-align: center;
+        }
+
+        H1 {
+            text-align: center;
+            font-size: 14pt;
+            font-weight: normal;
+        }
+
+        form {
+
+            font-size: 50px;
+        }
+
+        #name {
+            height: 30px;
+            font-family: cursive;
+            color: #0088DA;
+            font-size: 20px;
+
+
+
+        }
+
+        #btn1 {
+            width: 200px;
+            height: 100px;
+            font-size: 30px;
+            background-color: #0088DA;
+            color: #f4c424;
+            border-radius: 10px;
+            border: none;
+        }
+
+        #btn1:hover {
+            background-color: darkblue;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        #highScore {
+            width: 154px;
+            height: 30px;
+            background-color: #0088DA;
+            color: #f4c424;
+            border-radius: 10px;
+            border: none;
+            margin-top: 1em;
+
+        }
+
+        #highScore:hover {
+            background-color: darkblue;
+            cursor: pointer;
+
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 8em;
+        }
+
+        label {
+            font-family: sans-serif;
+            color: #0088DA;
+            font-weight: bold;
+        }
+
+
+        @media only screen and (max-width:900px) {
+
+
+
+            #btn1 {
+                width: 100px;
+                height: 30px;
+                font-size: 10px;
+            }
+
+            label {
+                font-size: 20px;
+            }
+
+            form {
+                margin-top: 5em;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <audio id="myAudio">
+            <source src="Sounds/game_background.mp3">
+
+        </audio>
+        <!-- <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Game</a></li>
+            <li><a>Results</a></li>
+            <li><a>Register</a></li>
+        </ul>
+        </nav> -->
+    </header>
+
+    <main>
+        <div id="formControl">
+            <form action="mines.html" method="get">
+                <!-- used form validation -->
+                <label>Enter Your Name:</label> <input size="25" type="text" id="name" required pattern="^[A-Za-z]+$"><br>
+                <input size="50" type="submit" value="Start Game" id="btn1">
+
+            </form>
+            <button id="highScore">View High Scores</button>
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="home.js"></script>
+
+</body>
+
+</html>

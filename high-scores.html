@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>High Scores List</title>
+    <style>
+        #highScore {
+            font-family: 'open sans'sans-serif;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #DDD;
+            padding: 8px;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #0088DA;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="goBack">Click here to return to home page</button>
+    <table id="highScore"></table>
+    <h1 id="display"></h1>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script type="text/javascript" src="high-score.js"></script>
+</body>
+
+</html>
